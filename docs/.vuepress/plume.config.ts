@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: './w509.svg',
 
   appearance: true,  // 配置 深色模式
 
@@ -25,7 +25,7 @@ export default defineThemeConfig({
 
   // prevPage: true,   // 是否启用上一页链接
   // nextPage: true,   // 是否启用下一页链接
-  // createTime: true, // 是否显示文章创建时间
+  createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
   // footer: {
@@ -37,8 +37,8 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: 'w509&#x27;s blog',
+    avatar: './w509.svg',
+    name: "w509's blog",
     description: '',
     // circle: true,
     // location: '',
