@@ -10,7 +10,7 @@ export default defineUserConfig({
 
   head: [
     // 配置站点图标
-    ['link', { href: './w509.svg' }],
+    ['link', { href: './plume.svg' }],
   ],
 
   bundler: viteBundler(),
