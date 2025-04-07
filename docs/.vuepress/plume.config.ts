@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: './plume.svg',
+  logo: './w509.svg',
 
   appearance: true,  // 配置 深色模式
 
@@ -37,7 +37,7 @@ export default defineThemeConfig({
    * @see https://theme-plume.vuejs.press/config/basic/#profile
    */
   profile: {
-    avatar: './plume.svg',
+    avatar: './w509.svg',
     name: "w509's blog",
     description: '',
     // circle: true,
