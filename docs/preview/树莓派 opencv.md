@@ -3,19 +3,19 @@ title: 树莓派 opencv
 createTime: 2025/04/18 19:41:37
 ---
 
-# 前言
+## 前言
 
 本文使用树莓派4B，刷入的是 Bullseye 系统（2024.10.22版本），为什么不刷最新的 Bookworm 的原因是在实际部署了之后发现其使用 OV5647 的时候出现各式各样的 bug。而 Bullseye 的 `raspi-config` 依然存在的摄像头命令可以直接启用而不需要搞奇奇怪怪的配置。
 
 笔者会在本文中记录踩坑过程，希望能够提供参考。
 
-# 树莓派系统刷入
+## 树莓派系统刷入
 
 刷入 2024.10.22 更新的 Bullseye 镜像，使用官方镜像烧录器可以免去第一次登陆修改密码或是配置 wifi 等操作，推荐使用，具体刷入过程不赘述。
 
-# 配置
+## 配置
 
-## ssh 连接
+### ssh 连接
 
 登上路由器，固定树莓派的 ip 地址
 
@@ -50,7 +50,7 @@ ClientAliveCountMax 值修改为1000    # 1000次发送请求无响应就关闭�
 
 这几行的作用基本都是为了保持 ssh 一直连接，更改这几行可以减少很多奇怪的问题，包括服务器开机后 ssh 长时间不连接，之后再想连接被拒绝
 
-## apt
+### apt
 
 接下来是 apt 的配置，首先是换源，这里使用清华源
 
@@ -71,7 +71,7 @@ apt install aptitude -y
 
 我推荐使用 aptitude，它提供了更好的软件包管理和更优化的命令行图形界面，使用方式也与 apt 一致
 
-## 修改欢迎页信息
+### 修改欢迎页信息
 
 参考 [这篇文章](https://www.cnblogs.com/azureology/p/14051040.html)
 
@@ -93,7 +93,7 @@ mv /etc/motd /etc/motd.sample
 
 欢迎信息就简洁显示温度等信息了
 
-## 摄像头和 VNC
+### 摄像头和 VNC
 
 利用 `raspi-config` 可以轻松完成许多配置，打开摄像头、VNC，以及设置中文
 
@@ -117,7 +117,7 @@ hdmi_force_hotplug=1      # 强制启用HDMI输出
 
 所以仅需开启 `raspi-config` 中的配置即可
 
-## opencv
+### opencv
 
 可以使用 `aptitude install python3-opencv` 安装 opencv，也可以使用 `pip`
 
