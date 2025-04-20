@@ -9,7 +9,7 @@ config:
     hero:
       name: w509's blog
       tagline: 
-      text: here nothing
+      text: Nothing here
       actions:
         -
           theme: brand
