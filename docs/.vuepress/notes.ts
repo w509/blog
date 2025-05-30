@@ -1,19 +1,19 @@
 import { defineNoteConfig, defineNotesConfig } from 'vuepress-theme-plume'
 
-const STM32Note = defineNoteConfig({
+const STM32 = defineNoteConfig({
   dir: 'STM32',
   link: '/STM32',
   sidebar: 'auto',
 })
 
-const opencvNote = defineNoteConfig({
-  dir: 'opencv',
-  link: '/opencv',
+const MaixPy = defineNoteConfig({
+  dir: 'MaixPy',
+  link: '/MaixPy',
   sidebar: 'auto',
 })
 
 export const notes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [STM32Note, opencvNote],
+  notes: [STM32, MaixPy],
 })
