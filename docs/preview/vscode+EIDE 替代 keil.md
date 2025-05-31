@@ -45,12 +45,12 @@ createTime: 2025/05/30 16:58:45
 
 虽然相对而言 clangd 插件的智能补全和包含库跳转功能会更好用一点，不过 EIDE 文档更推荐使用 C/C++
 
-并且根据其[官方文档](https://em-ide.com/zh-cn/docs/notice/cpptools_cfg)所言
+并且根据其[官方文档](https://em-ide.com/zh-cn/docs/notice/cpptools_cfg)所言：
 
-```
+::: card
 EIDE 将在内部使用 cpptool CustomConfiguraionProvider api 为你的项目自动进行配置，C/C++ 插件将根据 EIDE 提供的配置为你的项目提供补全，智能感知等功能。
 因此 不要手动 新建，编写 c_cpp_properties.json 文件，如果你这样做了，C/C++ 插件将优先使用 c_cpp_properties.json，如果你的 c_cpp_properties.json 存在错误，那么项目的 补全，智能感知等功能将不能正常工作。
-```
+:::
 
 另外就是去设置里修改一下 EIDE 的设置 `Repository: Use Proxy`，取消勾选
 
