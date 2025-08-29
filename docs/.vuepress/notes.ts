@@ -12,8 +12,14 @@ const MaixPy = defineNoteConfig({
   sidebar: 'auto',
 })
 
+const EmbeddedC = defineNoteConfig({
+  dir: 'EmbeddedC',
+  link: '/EmbeddedC',
+  sidebar: 'auto',
+})
+
 export const notes = defineNotesConfig({
   dir: 'notes',
   link: '/',
-  notes: [STM32, MaixPy],
+  notes: [STM32, MaixPy, EmbeddedC],
 })

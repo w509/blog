@@ -12,7 +12,7 @@ export const navbar = defineNavbarConfig([
     items: [
       { text: 'STM32', link: '/notes/STM32/README.md', icon: 'codicon:chip' },
       { text: 'MaixPy', link: '/notes/MaixPy/README.md', icon: 'mdi:eye' },
-      { text: '嵌入式C语言', link: '/notes/EmbeddedC/README.md', icon: 'arcticons:clanguage' },
+      { text: '嵌入式C语言', link: '/notes/EmbeddedC/README.md', icon: 'streamline-logos:c-language-logo-solid' },
     ]
   },
 ])
