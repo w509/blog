@@ -1,6 +1,6 @@
 ---
-title: vscode+STM32CubeCLT
-createTime: 2025/06/16 22:00:00
+title: vscode+cmake 编译 stm32
+createTime: 2025/12/12 22:00:00
 permalink: /blog/e23unpf4/
 ---
 
@@ -40,4 +40,6 @@ Toolset for third-party integrated development environment (IDE) providers, allo
 它提供一个 exe，直接安装到想要安装的目录下即可，会自动配置环境变量，省去我们配置的麻烦
 
 它提供了我们所需的 `cmake + ninja + arm-none-eabi` 等工具，能直接帮我们完成所有编译需要的环境配置
+
+最重要的是它能直接配置好环境变量，不过我建议大家熟悉一下环境变量这个东西，很多地方都有用
 
