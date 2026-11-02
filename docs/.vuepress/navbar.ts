@@ -10,8 +10,8 @@ export default defineNavbarConfig([
   { text: '首页', link: '/', icon: 'mdi:home' },
   { text: '文章', link: '/blog/', icon: 'material-symbols:article' },
   // { text: '标签', link: '/blog/tags/' },
-  { text: '归档', link: '/blog/archives/', icon: 'material-symbols:archive' },
-  { text: '分类', link: '/blog/categories/', icon: 'quill:sort' },
+  { text: '归档', link: '/archives/', icon: 'material-symbols:archive' },
+  { text: '分类', link: '/categories/', icon: 'quill:sort' },
   {
     text: '笔记',
     icon: 'material-symbols:edit-note',
