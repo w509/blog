@@ -14,7 +14,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 
 export default defineUserConfig({
-  base: '/',
+  base: '/blog/',
   lang: 'zh-CN',
   title: "w509's blog",
   description: 'Nothing here',
