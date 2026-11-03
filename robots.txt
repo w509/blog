@@ -1,0 +1,3 @@
+Sitemap: https://w509.github.io/blog/sitemap.xml
+User-agent:*
+Disallow:
